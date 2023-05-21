@@ -2,9 +2,13 @@ import React, { useContext, useState } from 'react';
 import loginImage from '../../assets/login.gif'
 import { Link } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 import { AuthContext } from '../../Providers/AuthProvider';
+
 const Login = () => {
-    const{logIn} = useContext(AuthContext);
+    const{logIn,loginWithGoogle} = useContext(AuthContext);
+    
+    const[user,setUser] = useState();
 
     const handleLogin = e=> {
         e.preventDefault();
@@ -13,6 +17,27 @@ const Login = () => {
         const password = form.password.value;
         console.log(email,password);
 
+        logIn(email,password) 
+        // login
+        .then(result=> {
+            const loggedIn = result.user;
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Login Successful',
+                showConfirmButton:false,
+                timer: 1500
+              })
+              setUser(loggedIn);
+              form.reset();
+        })
+    }
+    // login with google 
+    const handleGoogleLogin=(e)=> {
+        e.preventDefault();
+        loginWithGoogle()
+        .then(result=> {})
+        .then(()=>{})
     }
     return (
         <div className="hero min-h-screen bg-base-100">
@@ -45,12 +70,12 @@ const Login = () => {
                         <p className='tex-xl'>New in ToddlerShop ? <Link className='text-md text-bold text-orange-500' to='/signup'>SignUp</Link></p>
                     </form>
                     <div className="divider text-blue-400">OR</div>
-                    <div className='flex justify-center items-center mb-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-xl'>
+                    <div onClick={handleGoogleLogin} className='flex justify-center items-center mb-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-xl'>
                         <button >
                             <FaGoogle className='h-[30px] w-[60px] mt-2'>
                             </FaGoogle>
                         </button>
-                        <p className='text-white text-lg'>Login With Google</p>
+                        <p className='text-white text-lg font-semibold'>Login With Google</p>
                     </div>
 
                 </div>
