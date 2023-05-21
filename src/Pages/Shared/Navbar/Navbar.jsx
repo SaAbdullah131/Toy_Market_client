@@ -1,8 +1,12 @@
 import React from 'react';
+import { useState } from 'react';
 import {Link} from 'react-router-dom';
 const Navbar = () => {
+    
+    const [user,setUser] = useState(null);
+
     return (
-        <div className="navbar bg-indigo-100 mb-4 mt-4">
+        <div className="navbar bg-indigo-100 mb-4 mt-4 rounded-md">
             <div className="flex-1">
                 <Link to='/' className="text-bold text-3xl"><span className='font-extrabold text-green-500'>Toddler</span><span className='font-bold text-yellow-500'>Shop</span></Link>
             </div>
