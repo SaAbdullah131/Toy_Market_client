@@ -7,7 +7,7 @@ import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
     const{logIn,loginWithGoogle} = useContext(AuthContext);
-    
+
     const[user,setUser] = useState();
 
     const handleLogin = e=> {
@@ -36,7 +36,15 @@ const Login = () => {
     const handleGoogleLogin=(e)=> {
         e.preventDefault();
         loginWithGoogle()
-        .then(result=> {})
+        .then(result=> {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Login Successful',
+                showConfirmButton:false,
+                timer: 1500
+              })
+        })
         .then(()=>{})
     }
     return (

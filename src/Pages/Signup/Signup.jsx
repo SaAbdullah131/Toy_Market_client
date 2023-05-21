@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import SignupImage from '../../assets/login.gif'
+import SignupImage from '../../assets/sign up.gif'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';

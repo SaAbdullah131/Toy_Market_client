@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
 const Navbar = () => {
-    
+
     const [user,setUser] = useState(null);
 
     return (
@@ -30,6 +30,7 @@ const Navbar = () => {
                         <li><a>Settings</a></li>
                         <li><a>Logout</a></li>
                     </ul>
+                    <button className='btn btn-primary'><Link to='/login'>Login</Link></button>
                 </div>
             </div>
         </div>
