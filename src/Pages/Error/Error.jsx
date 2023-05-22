@@ -7,7 +7,7 @@ const Error = () => {
         <>
            
                 <img className='mx-auto' src={ErrorImg} />
-                <button className='btn btn-warning '><Link  to='/' className='content-center '>Back to Homepage</Link></button>
+                <button className='btn btn-warning ml-80'><Link  to='/' className='content-center '>Back to Homepage</Link></button>
             
         </>
     )
