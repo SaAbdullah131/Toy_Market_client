@@ -3,7 +3,7 @@ import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
-        <div className="h-[calc(100vh)]">
+        <div>
             <Banner></Banner>
         </div>
     );
