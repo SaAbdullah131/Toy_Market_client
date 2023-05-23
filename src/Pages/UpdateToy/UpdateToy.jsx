@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import useTitle from '../../Title/useTitle';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+
 const UpdateToy = () => {
    useTitle('Update Toy');
-    const {user} =useContext(AuthContext);
+    const {user} = useContext(AuthContext);
 
-    const handleAddNewToy = e => {
+    const handleUpdateToy = e => {
         e.preventDefault();
         const form = e.target;
         const toy_name = form.toy_name.value;
@@ -19,17 +20,17 @@ const UpdateToy = () => {
         const available_quantity = form.quantity.value;
         const details_description = form.detail_description.value;
 
-        const newToyAdded = { toy_name, img_url, seller_name, seller_email, sub_category, price,rating,available_quantity,details_description}
-
-        fetch('https://toy-market-place-server-blue.vercel.app/add-a-toy', {
-            method: 'POST',
+        const updated = { toy_name, img_url, seller_name, seller_email, sub_category, price,rating,available_quantity,details_description}
+        console.log(toy_name);
+        fetch(`https://toy-market-place-server-blue.vercel.app/update/${_id}`, {
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(newToyAdded)
         })
        Swal.fire(
-            'New Toy Added Successfully'
+            'Updated Successfully'
     )
     form.reset();
 }
@@ -38,15 +39,15 @@ const UpdateToy = () => {
             <div className="hero min-h-screen w-full bg-base-200">
                 <div className="card  shadow-2xl bg-indigo-100 my-8">
                     <div className="card-body w-full">
-                        <h1 className="text-5xl text-info mb-4 font-semibold text-center">Add A New TOY</h1>
-                        <form onSubmit={handleAddNewToy}>
+                        <h1 className="text-5xl text-info mb-4 font-semibold text-center">Update Your TOY</h1>
+                        <form onSubmit={handleUpdateToy}>
                             <div className='flex flex-col md:flex-row gap-4'>
                                 <div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">Toy Name</span>
                                         </label>
-                                        <input name='toy_name' type="text" placeholder="name" className="input input-bordered" defaultValue={toy_name} />
+                                        <input name='toy_name' type="text" placeholder="name" defaultValue = {toy_name} className="input input-bordered"/>
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
@@ -101,7 +102,7 @@ const UpdateToy = () => {
                                 <textarea name='detail_description' placeholder="description" className="input input-bordered" />
                             </div>
                             <div className="form-control mt-6">
-                                <input type="submit" className=" btn btn-primary mx-auto" value="UpdateToy" />
+                                <input type="submit" className=" btn btn-primary mx-auto" value="Update" />
                             </div>
                         </form>
                     </div>

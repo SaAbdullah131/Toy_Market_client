@@ -19,6 +19,7 @@ const AllToy = () => {
     }
     return (
             <>
+            
             <table className="table w-full py-2 mt-2 mb-2">
                 {/* head */}
                 <thead>

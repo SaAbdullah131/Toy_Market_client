@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import loginImage from '../../assets/login.gif'
 import { Link } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
+import {FcGoogle} from 'react-icons/fc';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Providers/AuthProvider';
 
@@ -80,8 +81,8 @@ const Login = () => {
                     <div className="divider text-blue-400">OR</div>
                     <div onClick={handleGoogleLogin} className='flex justify-center items-center mb-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2 rounded-xl'>
                         <button >
-                            <FaGoogle className='h-[30px] w-[60px] mt-2'>
-                            </FaGoogle>
+                            <FcGoogle className='h-[30px] w-[60px] mt-2'>
+                            </FcGoogle>
                         </button>
                         <p className='text-white text-lg font-semibold'>Login With Google</p>
                     </div>

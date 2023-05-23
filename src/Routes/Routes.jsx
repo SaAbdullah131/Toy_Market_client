@@ -11,7 +11,7 @@ import PrivateRouters from "./PrivateRoute";
 import ToyDetails from "../Pages/ToyDetails/ToyDetails";
 import MyToys from "../Pages/MyToy/MyToy";
 import AddToy from "../Pages/AddToy/AddToy";
-
+import UpdateToy from '../Pages/UpdateToy/UpdateToy';
 const router = createBrowserRouter([
     {
         path:'/',
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/update/:id',
-                element:<PrivateRouters></PrivateRouters>,
+                element:<PrivateRouters><UpdateToy></UpdateToy></PrivateRouters>,
                 loader:({params})=>fetch(``)
             }
         ]
