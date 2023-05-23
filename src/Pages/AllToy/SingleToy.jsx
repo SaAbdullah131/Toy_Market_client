@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const SingleToy = ({alltoy,user}) => {
+console.log(user);
     // console.log(alltoy);
-    
+    const handleViewDetails=()=> {
+        if(!user) {
+            Swal.fire("Bro You have to Login first");
+        }
+    }
     return (
         <>
         {
@@ -18,8 +24,8 @@ const SingleToy = ({alltoy,user}) => {
                             <td>{price}</td>
                             <td>{available_quantity}</td>
                             <td>
-                                <Link to={`/alltoy/just/${_id}`}>
-                                    <button className='btn btn-primary'>View Details</button>
+                                <Link onClick={handleViewDetails} to={`/alltoy/just/${_id}`}>
+                                    <button  className='btn btn-primary'>View Details</button>
                                 </Link>
                             </td>
                         </tr>
