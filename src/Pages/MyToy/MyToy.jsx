@@ -24,7 +24,7 @@ const MyToys = () => {
     }, []);
     
     const {_id} = alltoy;
-
+    console.log(alltoy);
     const handleDelete = _id => {
         console.log(_id);
         Swal.fire({
@@ -37,7 +37,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`${_id}`, {
+                fetch(`https://toy-market-place-server-blue.vercel.app/delete/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -46,7 +46,7 @@ const MyToys = () => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your file has been deleted.',
+                                'Your Toy has been deleted.',
                                 'success'
                             )
                             const remaining = alltoy.filter(cof => cof._id !== _id)

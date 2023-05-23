@@ -5,7 +5,7 @@ import Category from '../../../Category/Category';
 
 const Home = () => {
     return (
-        <div>
+        <div className='mx-auto'>
             <Banner></Banner>
             <FeaturedToy></FeaturedToy>
             <Category></Category>

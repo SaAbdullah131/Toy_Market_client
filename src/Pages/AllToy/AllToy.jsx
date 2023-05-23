@@ -6,7 +6,17 @@ import { AuthContext } from '../../Providers/AuthProvider';
 const AllToy = () => {
     const loader = useLoaderData();
     const[alltoy,setAlltoy] = useState(loader);
-    const{user} = useContext(AuthContext);
+    const [hide,setHide] = useState(false);
+
+    const handleShowButton =() => {
+        fetch(`https://toy-market-place-server-blue.vercel.app/alltoy/?limit=0`)
+        .then(res=>res.json())
+        .then(data=>{
+            setAlltoy([]);
+            setAlltoy(data);
+            setHide(true);
+        })
+    }
     return (
             <>
             <table className="table w-full py-2 mt-2 mb-2">
@@ -25,7 +35,14 @@ const AllToy = () => {
                 <tbody>
                     <SingleToy alltoy={alltoy}></SingleToy>
                  </tbody>
-                 </table>   
+                 </table>  
+                 <div>
+                    {
+                        hide ? 
+                        <></>:
+                        <button className="btn btn-primary" onClick={handleShowButton}>Show All</button>
+                    }
+                </div> 
                 </>
                 )
 }

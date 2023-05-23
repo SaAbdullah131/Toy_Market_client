@@ -17,7 +17,7 @@ const SingleCard = ({ allToy, user }) => {
     }
     return (
         <div>
-            <div className="card card-compact w-full rounded-lg bg-indigo-100 shadow-xl py-4">
+            <div className="card card-compact w-96 rounded-lg bg-indigo-100 shadow-xl">
                 <figure><img className='h-[250px]' src={img_url}/></figure>
                 <div className="card-body">
                     <h2 className="card-title text-violet-500 text-xl">{toy_name}</h2>
@@ -28,7 +28,7 @@ const SingleCard = ({ allToy, user }) => {
                         readOnly
                     ></Rating>
                     <div className="card-actions justify-center">
-                        <Link onClick={handleViewButton} to={`/toys/just/${_id}`}><button className="btn btn-primary-sm">View Details</button></Link>
+                        <Link onClick={handleViewButton} to={`/alltoy/just/${_id}`}><button className="btn btn-primary-sm">View Details</button></Link>
                     </div>
                 </div>
             </div>

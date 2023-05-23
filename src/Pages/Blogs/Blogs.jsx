@@ -2,9 +2,9 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
+        <div className='bg-indigo-200'>
             <h3 className='text-bold text-3xl  text-center underline mb-4'>Answering Question</h3>
-            <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box text-center mb-2">
+            <div tabIndex={0} className="collapse collapse-plus border border-violet-300 bg-base-100 rounded-box text-center mb-2 ">
                 <div className="collapse-title text-xl font-medium ">
                     What is an access token and refresh token ? How do they work and where should we store them on the client-side?
                 </div>

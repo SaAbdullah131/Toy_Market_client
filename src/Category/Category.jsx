@@ -49,7 +49,7 @@ const Category = () => {
         }
     }
     const cards = <>
-    <div className='flex flex-wrap gap-5 my-4 justify-center items-center '>
+    <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-3 my-4 justify-center items-center '>
         {
             allToy.map(toy => <SingleCard
                 key={toy._id}

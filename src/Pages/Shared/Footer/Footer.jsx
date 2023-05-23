@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-            <p className='text-center p-2'>&copy; Copyright.All Rights Reserved by ToddlerShop</p>
+            <p className='text-center p-2'>Copyright &copy;2023.All Rights Reserved by ToddlerShop</p>
         </div>
     );
 };

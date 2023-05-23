@@ -43,7 +43,7 @@ const Navbar = () => {
                         user ?
                             <>
                                 <li><Link to='/mytoy'>MyToy</Link></li>
-                                <li><Link to='/addtoy'>AddToy</Link></li>
+                                <li><Link to='/add-a-toy'>AddToy</Link></li>
                             </>:
                             ''
                     }

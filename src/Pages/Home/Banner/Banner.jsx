@@ -35,7 +35,7 @@ const Banner = () => {
                         <p> Unleash your imagination and let these incredible companions ignite your sense of wonder and discovery. <br />So, are you ready to unleash</p>
                         <div className='mx-auto'>
                             <Link to='/alltoy' >
-                                <button className='btn btn-primary  '>All Toy</button>
+                                <button className='btn btn-primary'>All Toy</button>
                             </Link>
                         </div>
                     </div>
