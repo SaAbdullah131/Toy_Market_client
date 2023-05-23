@@ -33,9 +33,9 @@ const Banner = () => {
                     <div className='text-white space-y-7 pl-12'>
                         <h2 className='text-6xl'>Unleash The FuN !! <br /> Animal Toys for Every Adventure!</h2>
                         <p> Unleash your imagination and let these incredible companions ignite your sense of wonder and discovery. <br />So, are you ready to unleash</p>
-                        <div>
-                            <Link to='/alltoy'>
-                                <button className='btn btn-primary mr-3'>All Toy</button>
+                        <div className='mx-auto'>
+                            <Link to='/alltoy' >
+                                <button className='btn btn-primary  '>All Toy</button>
                             </Link>
                         </div>
                     </div>

@@ -1,0 +1,306 @@
+[
+    {
+        "img_url": "https://img.freepik.com/free-vector/rocking-horse-realistic_1284-6010.jpg?w=740&t=st=1684846634~exp=1684847234~hmac=241dc988aa9697b57b263a1e3ab59f1799c3ca4ae9201d850d9550806e390526",
+        "seller_name": "HorseyAdventures",
+        "seller_email": "sales@horseyadventures.com",
+        "toy_name": "Galloping Horse",
+        "price": "$19.99",
+        "rating": 4.9,
+        "available_quantity": 12,
+        "sub_category": "Horses",
+        "details_description": "Saddle up and get ready for exciting equestrian adventures with our Galloping Horse toy! This majestic horse figurine is beautifully crafted and designed for realistic play. With its flowing mane and strong build, it's the perfect companion for imaginative horseback riding adventures. Let your child's imagination run wild as they embark on thrilling rides through meadows, forests, and beyond!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/horse-with-saddle-cartoon-character-white-background_1308-53287.jpg?w=740&t=st=1684846637~exp=1684847237~hmac=12ccf706d6409e566ebc42b1b6de745f657edbe8f506afd3178b6b138a973603",
+        "seller_name": "EquestrianDreams",
+        "seller_email": "info@equestriandreams.com",
+        "toy_name": "Groom and Ride Horse Set",
+        "price": "$29.99",
+        "rating": 4.8,
+        "available_quantity": 15,
+        "sub_category": "Horses",
+        "details_description": "Experience the world of horse care and riding with our Groom and Ride Horse Set! This comprehensive set includes a realistic toy horse, grooming tools, a saddle, and more. Your child can groom the horse's mane, brush its coat, and then hop on for an exciting riding adventure. Encourage your child's love for horses and foster a sense of responsibility and compassion with this engaging playset!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/fun-horse_183364-80091.jpg?w=740&t=st=1684846640~exp=1684847240~hmac=fe6e1c4e17633eafed3e08af89efaf16d32755751433e89d98a201dbcd003fd4",
+        "seller_name": "HorseLoversParadise",
+        "seller_email": "info@horseloversparadise.com",
+        "toy_name": "Equestrian Rider Set",
+        "price": "$39.99",
+        "rating": 4.9,
+        "available_quantity": 8,
+        "sub_category": "Horses",
+        "details_description": "Experience the thrill of horseback riding with our Equestrian Rider Set! This set includes a beautifully detailed toy horse and a fully articulated equestrian rider figure. The rider can sit on the horse, hold the reins, and even perform riding poses. With realistic accessories like a saddle, bridle, and helmet, your child can immerse themselves in the world of horse riding and create their own equestrian adventures!"
+      },  
+      {
+        "img_url": "https://img.freepik.com/free-vector/horse_1308-84587.jpg?w=740&t=st=1684846656~exp=1684847256~hmac=a1dac69d158af0d182bfc635affbb6481f38341793cbdca4debd3deb8614068e",
+        "seller_name": "GallopAndPlay",
+        "seller_email": "sales@gallopandplay.com",
+        "toy_name": "Majestic White Horse",
+        "price": "$24.99",
+        "rating": 4.9,
+        "available_quantity": 10,
+        "sub_category": "Horses",
+        "details_description": "Experience the beauty and grace of our Majestic White Horse toy! This stunning horse figurine features a flowing mane and a regal stance that captures the essence of elegance. With its lifelike details, it's the perfect companion for imaginative horse adventures. Let your child's imagination soar as they gallop through meadows and embark on grand equestrian quests!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/flat-design-christmas-toy-collection_23-2148371412.jpg?w=740&t=st=1684846646~exp=1684847246~hmac=d4bb824f182c52b51b95c7a2120fc5a3d5297d74733445252186de14c0e83490",
+        "seller_name": "StableMates",
+        "seller_email": "info@stablemates.com",
+        "toy_name": "Miniature Horse Set",
+        "price": "$16.99",
+        "rating": 4.7,
+        "available_quantity": 15,
+        "sub_category": "Horses",
+        "details_description": "Introduce the magic of miniature horses with our Miniature Horse Set! This set includes a collection of adorable toy miniature horses, each with its own unique markings and colors. Perfect for imaginative play and display, these mini horses will captivate horse enthusiasts of all ages. Let the world of miniature horses gallop into your heart!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/trojan-horse-concept-illustration_114360-9355.jpg?w=740&t=st=1684846659~exp=1684847259~hmac=3c0982a8889d5e892700e19bce8b43a7bdb98a1f78c496c26579a4f0667935a7",
+        "seller_name": "HorseWhisperers",
+        "seller_email": "sales@horsewhisperers.com",
+        "toy_name": "Grazing Horse Figurine",
+        "price": "$9.99",
+        "rating": 4.5,
+        "available_quantity": 20,
+        "sub_category": "Horses",
+        "details_description": "Capture the serene beauty of a grazing horse with our Grazing Horse Figurine! This intricately designed horse figurine showcases a horse peacefully grazing in a meadow. With its lifelike details and hand-painted finish, it's a wonderful addition to any horse lover's collection. Let this grazing horse figurine bring a touch of tranquility and equestrian charm to your space!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/isolated-rocking-horse-kids_1308-115787.jpg?w=740&t=st=1684846662~exp=1684847262~hmac=a6a9a0e1e148b9b7f00d5571745b787328e1f65659f618cc5540204dc7ecb33f",
+        "seller_name": "HorsePowerPlay",
+        "seller_email": "info@horsepowerplay.com",
+        "toy_name": "Racing Champion Horse",
+        "price": "$19.99",
+        "rating": 4.8,
+        "available_quantity": 10,
+        "sub_category": "Horses",
+        "details_description": "Get ready for exciting races with our Racing Champion Horse! This beautifully crafted toy horse features a dynamic racing pose and vibrant colors. With its sleek design and determined expression, it embodies the spirit of a true racing champion. Let your child's imagination soar as they compete in thrilling horse races and celebrate victories with this impressive racing champion horse!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/isolated-rocking-horse-kids_1308-117350.jpg?w=740&t=st=1684846668~exp=1684847268~hmac=ac6a6d8d6e140fe7f146eca26356abd2fc60b3a720071e317cf0a79d4e0686f7",
+        "seller_name": "HorseParadiseToys",
+        "seller_email": "sales@horseparadisetoys.com",
+        "toy_name": "Horse Grooming Kit",
+        "price": "$14.99",
+        "rating": 4.6,
+        "available_quantity": 18,
+        "sub_category": "Horses",
+        "details_description": "Take care of your toy horses with our Horse Grooming Kit! This set includes a variety of grooming tools, such as a brush, comb, hoof pick, and more. Teach your child the importance of grooming and maintaining the health of horses while engaging in imaginative play. Let the grooming adventures begin as your child pampers and cares for their beloved toy horses!"
+      },
+        
+      {
+        "img_url": "https://img.freepik.com/free-photo/one-teddy-bear-hugs-another_144627-15245.jpg?w=740&t=st=1684845567~exp=1684846167~hmac=412230620a9b63bb3c185a20576989b4997c8e552029b79486448f513a58cc6e",
+        "seller_name": "CuddlyToys",
+        "seller_email": "info@cuddlytoys.com",
+        "toy_name": "Snuggly Teddy Bear",
+        "price": "$9.99",
+        "rating": 4.6,
+        "available_quantity": 50,
+        "sub_category": "Taddy Bears",
+        "details_description": "Meet your new best friend, the Snuggly Teddy Bear! This adorable and huggable teddy bear is perfect for cuddles and companionship. With its soft fur and friendly smile, it's sure to bring warmth and comfort to anyone. Whether you need a loyal bedtime buddy or a playful companion, this teddy bear is always ready for endless fun and snuggles!"
+      },
+      
+      {
+        "img_url": "https://img.freepik.com/free-photo/cute-teddy-bear_144627-15238.jpg?w=740&t=st=1684845570~exp=1684846170~hmac=7ce592074bb40473ad51f299e5db182a72ea66b2d5783f97abe013d33725cdbe",
+        "seller_name": "PawsomeToys",
+        "seller_email": "sales@pawsometoys.com",
+        "toy_name": "Puppy Love Plushies",
+        "price": "$12.99",
+        "rating": 4.4,
+        "available_quantity": 30,
+        "sub_category": "Taddy Bears",
+        "details_description": "Spread love and cuteness with our Puppy Love Plushies! These charming teddy bears are dressed as adorable puppies, complete with soft, plush fur and cute outfits. Each teddy bear puppy is looking for a new best friend to shower with hugs and snuggles. Let these lovable plushies bring joy and warmth to your child's heart!"
+      },
+      
+      {
+        "img_url": "https://img.freepik.com/premium-vector/cute-teddy-bear-with-red-heart_29190-5497.jpg?w=740",
+        "seller_name": "FurryFriendsEmporium",
+        "seller_email": "info@furryfriendsemporium.com",
+        "toy_name": "Cuddly Companion Teddy Bear",
+        "price": "$14.99",
+        "rating": 4.7,
+        "available_quantity": 25,
+        "sub_category": "Taddy Bears",
+        "details_description": "Meet your new cuddly companion, the Cuddly Companion Teddy Bear! This super-soft and lovable teddy bear is the perfect snuggle buddy. With its huggable size and gentle expression, it brings comfort and warmth to anyone in need of a furry friend. Whether it's naptime or playtime, this teddy bear is always ready to provide love and companionship!"
+      },
+      
+      {
+        "img_url": "https://example.com/toy_image13.jpg",
+        "seller_name": "PawsAndPlay",
+        "seller_email": "info@pawsandplay.com",
+        "toy_name": "Interactive Puppy",
+        "price": "$19.99",
+        "rating": 4.5,
+        "available_quantity": 15,
+        "sub_category": "Dogs",
+        "details_description": "Meet your new interactive friend, the Interactive Puppy! This adorable plush dog responds to touch and sound, making it feel like a real playful pup. It can bark, wag its tail, and even respond to your voice. With its soft and cuddly exterior, it's the perfect pet companion for hours of interactive and imaginative play!"
+      },
+      {
+        "img_url": "https://img.freepik.com/premium-photo/cute-brown-teddy-bear-colored-knitted-scarf-sitting-white-background_116441-7370.jpg?w=740",
+        "seller_name": "FuzzyPawsToys",
+        "seller_email": "sales@fuzzypawstoys.com",
+        "toy_name": "Tony Teddy Bear",
+        "price": "$12.99",
+        "rating": 4.3,
+        "available_quantity": 20,
+        "sub_category": "Taddy Bears",
+        "details_description": "Indulge in sweet scents and cuddles with our Scented Teddy Bear! This adorable teddy bear is not only incredibly soft but also infused with a delightful fragrance. It will captivate your senses with its comforting aroma and provide endless snuggles. Perfect as a gift or a companion for yourself, this scented teddy bear will fill your days with love and fragrance!"
+      },
+      {
+        "img_url": "https://example.com/toy_image15.jpg",
+        "seller_name": "EquestrianAdventures",
+        "seller_email": "info@equestrianadventures.com",
+        "toy_name": "Pony Stable Playset",
+        "price": "$29.99",
+        "rating": 4.7,
+        "available_quantity": 12,
+        "sub_category": "Horses",
+        "details_description": "Immerse yourself in the world of ponies with our Pony Stable Playset! This comprehensive playset includes a stable, toy ponies, grooming tools, and accessories. Your child can groom the ponies, feed them, and take them for rides. With realistic details and endless play possibilities, this pony stable playset is perfect for horse enthusiasts and imaginative play!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/teddy-bears-couple-with-red-heart-gift-white_155003-17148.jpg?w=740&t=st=1684845606~exp=1684846206~hmac=06d70f917e2cf474120678693091a7dde2206a83b85cd213c05cbbc8694ce85a",
+        "seller_name": "FuzzyPawsToys",
+        "seller_email": "sales@fuzzypawstoys.com",
+        "toy_name": "Todley Teddy Bear",
+        "price": "$12.99",
+        "rating": 4.3,
+        "available_quantity": 20,
+        "sub_category": "Taddy Bears",
+        "details_description": "Indulge in sweet scents and cuddles with our Scented Teddy Bear! This adorable teddy bear is not only incredibly soft but also infused with a delightful fragrance. It will captivate your senses with its comforting aroma and provide endless snuggles. Perfect as a gift or a companion for yourself, this scented teddy bear will fill your days with love and fragrance!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/baby-shower-card-with-little-girl_24877-51447.jpg?w=740&t=st=1684845618~exp=1684846218~hmac=d2a05e6ca23c972fc3b507f2c0b947011bc00a608f762c0e017c85fb77884bed",
+        "seller_name": "FuzzyPawsToys",
+        "seller_email": "sales@fuzzypawstoys.com",
+        "toy_name": "Scented Teddy Bear",
+        "price": "$12.99",
+        "rating": 4.3,
+        "available_quantity": 20,
+        "sub_category": "Taddy Bears",
+        "details_description": "Indulge in sweet scents and cuddles with our Scented Teddy Bear! This adorable teddy bear is not only incredibly soft but also infused with a delightful fragrance. It will captivate your senses with its comforting aroma and provide endless snuggles. Perfect as a gift or a companion for yourself, this scented teddy bear will fill your days with love and fragrance!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/fluffy-toy-texture-close-up_23-2149686881.jpg?w=360&t=st=1684845913~exp=1684846513~hmac=a8354a6cdfb0cdd2388708eb9ab92098e7ed4efd82a1e01b8d21a4c4e87aba96",
+        "seller_name": "FuzzyPawsToys",
+        "seller_email": "sales@fuzzypawstoys.com",
+        "toy_name": "Sanity Teddy Bear",
+        "price": "$12.99",
+        "rating": 4.3,
+        "available_quantity": 20,
+        "sub_category": "Taddy Bears",
+        "details_description": "Indulge in sweet scents and cuddles with our Scented Teddy Bear! This adorable teddy bear is not only incredibly soft but also infused with a delightful fragrance. It will captivate your senses with its comforting aroma and provide endless snuggles. Perfect as a gift or a companion for yourself, this scented teddy bear will fill your days with love and fragrance!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/front-view-cute-little-baby-boy-cupcake-teddybear_23-2148415544.jpg?w=740&t=st=1684845930~exp=1684846530~hmac=ea4c12fa40b3fa8eba815fb4338d98ecf637780e3a73dc31c3b760bd5cf9f5ce",
+        "seller_name": "FuzzyPawsToys",
+        "seller_email": "sales@fuzzypawstoys.com",
+        "toy_name": "Scented Teddy Bear",
+        "price": "$12.99",
+        "rating": 4.3,
+        "available_quantity": 20,
+        "sub_category": "Taddy Bears",
+        "details_description": "Indulge in sweet scents and cuddles with our Scented Teddy Bear! This adorable teddy bear is not only incredibly soft but also infused with a delightful fragrance. It will captivate your senses with its comforting aroma and provide endless snuggles. Perfect as a gift or a companion for yourself, this scented teddy bear will fill your days with love and fragrance!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/teddy-bear-with-dummy_23-2147622339.jpg?w=360&t=st=1684846038~exp=1684846638~hmac=cfabdd89314041876c648021d3e69a9b22fbcb534487bc56876ee4c743410578",
+        "seller_name": "FuzzyPawsToys",
+        "seller_email": "sales@fuzzypawstoys.com",
+        "toy_name": "Monty Teddy Bear",
+        "price": "$12.99",
+        "rating": 4.3,
+        "available_quantity": 20,
+        "sub_category": "Taddy Bears",
+        "details_description": "Indulge in sweet scents and cuddles with our Scented Teddy Bear! This adorable teddy bear is not only incredibly soft but also infused with a delightful fragrance. It will captivate your senses with its comforting aroma and provide endless snuggles. Perfect as a gift or a companion for yourself, this scented teddy bear will fill your days with love and fragrance!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/group-different-cute-pets_52683-37216.jpg?w=740&t=st=1684847090~exp=1684847690~hmac=264c5ae621d426eb0d6427e6b3ba3701995f7a863ae162133d5307a17becdeac",
+        "seller_name": "PuppyPals",
+        "seller_email": "info@puppypals.com",
+        "toy_name": "Playful Dog Set",
+        "price": "$14.99",
+        "rating": 4.7,
+        "available_quantity": 20,
+        "sub_category": "Dogs",
+        "details_description": "Bring home the joy of having a furry friend with our Playful Dog Set! This set features a collection of adorable dog figurines representing different breeds. From a loyal Labrador to an energetic Dalmatian, these dogs are ready to play, cuddle, and explore with your child. Each dog comes with its own toy and accessories for endless hours of imaginative play and puppy love!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/adorable-white-little-puppy_23-2148985895.jpg?w=740&t=st=1684847098~exp=1684847698~hmac=ec96d94df2b1968ee77fa577b8db064f39138c0f8fc6be36c68880bc636dffe9",
+        "seller_name": "PuppyPalace",
+        "seller_email": "info@puppypalace.com",
+        "toy_name": "Interactive Dog Training Set",
+        "price": "$34.99",
+        "rating": 4.9,
+        "available_quantity": 8,
+        "sub_category": "Dogs",
+        "details_description": "Train and play with our Interactive Dog Training Set! This set includes an interactive toy dog and a range of accessories for training and playtime. The toy dog responds to commands and gestures, allowing your child to practice basic obedience training. With a variety of fun activities and challenges, this interactive dog training set provides hours of entertainment and learning for dog enthusiasts!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/studio-shot-welsh-corgi-pembroke-playing_155003-35333.jpg?w=740&t=st=1684847120~exp=1684847720~hmac=66093b6a3fc0dbafdfe4095cac2a1a8b0a9adeb284e2618c47f8af9f94d74322",
+        "seller_name": "WoofWonderland",
+        "seller_email": "sales@woofwonderland.com",
+        "toy_name": "Plush Squeaky Dog Toy Set",
+        "price": "$12.99",
+        "rating": 4.7,
+        "available_quantity": 20,
+        "sub_category": "Dogs",
+        "details_description": "Delight your furry friend with our Plush Squeaky Dog Toy Set! This set includes a variety of colorful and soft plush toys that squeak when squeezed. Perfect for interactive play and gentle chewing, these toys will keep your dog entertained and engaged. Bring joy and excitement to your dog's playtime with this delightful plush squeaky dog toy set!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/cute-labrador-dog-with-food-ball-cartoon-vector-icon-illustration-animal-sport-icon-concept_138676-4331.jpg?w=740&t=st=1684847125~exp=1684847725~hmac=1cd3ce437fc01bbc161a2bb16fe209831f4cc98043c6cd576df9d53d75cc3b23",
+        "seller_name": "DoggyDelights",
+        "seller_email": "sales@doggydelights.com",
+        "toy_name": "Chewable Rope Dog Toy",
+        "price": "$9.99",
+        "rating": 4.5,
+        "available_quantity": 25,
+        "sub_category": "Dogs",
+        "details_description": "Provide your dog with endless chewing fun with our Chewable Rope Dog Toy! This durable and interactive toy is made of high-quality ropes that are perfect for chewing, tugging, and playing. Whether it's a game of fetch or a solo chewing session, this chewable rope dog toy will keep your furry friend entertained and promote healthy dental habits."
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/pet-dog-front-doghome_1308-72259.jpg?w=740&t=st=1684847151~exp=1684847751~hmac=1d2e6e604324d78b29f332445b83924a10b12fb5ba27776e8c6a080b6ef84f02",
+        "seller_name": "PuppyPlayland",
+        "seller_email": "info@puppyplayland.com",
+        "toy_name": "Squeaky Plush Dog Bone",
+        "price": "$6.99",
+        "rating": 4.6,
+        "available_quantity": 30,
+        "sub_category": "Dogs",
+        "details_description": "Spoil your pup with our Squeaky Plush Dog Bone! This adorable and squeaky toy is shaped like a bone, perfect for dogs to chew and play with. Made of soft and durable materials, it's gentle on your dog's teeth and provides hours of entertainment. Let your furry friend enjoy the squeaky goodness of this plush dog bone!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/closeup-shot-adorable-small-golden-retriever-pup-lying-purple-carpet-with-blue-toy_181624-32890.jpg?w=740&t=st=1684847191~exp=1684847791~hmac=51e74b7b45e12c0b5223fecbf9e5f0c3a72cec12ce5e761b74302f582d1c329f",
+        "seller_name": "DoggyDynasty",
+        "seller_email": "sales@doggydynasty.com",
+        "toy_name": "Interactive Dog Puzzle Game",
+        "price": "$19.99",
+        "rating": 4.7,
+        "available_quantity": 12,
+        "sub_category": "Dogs",
+        "details_description": "Engage your dog's mind with our Interactive Dog Puzzle Game! This game features various compartments and puzzles that require your dog to use their problem-solving skills to access hidden treats. With adjustable difficulty levels, it's suitable for dogs of all ages and sizes. Stimulate your dog's mental agility and provide hours of entertainment with this interactive dog puzzle game!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-photo/adorable-little-poodle-with-teddy-bear-toy-blue-surface_181624-39163.jpg?w=740&t=st=1684847202~exp=1684847802~hmac=f60df8cc6de6a54a834757bf9447cd75b1a89e6f6a603c2c2efabc533700f887",
+        "seller_name": "PuppyPalace",
+        "seller_email": "info@puppypalace.com",
+        "toy_name": "Interactive Dog Training Set",
+        "price": "$34.99",
+        "rating": 4.9,
+        "available_quantity": 8,
+        "sub_category": "Dogs",
+        "details_description": "Train and play with our Interactive Dog Training Set! This set includes an interactive toy dog and a range of accessories for training and playtime. The toy dog responds to commands and gestures, allowing your child to practice basic obedience training. With a variety of fun activities and challenges, this interactive dog training set provides hours of entertainment and learning for dog enthusiasts!"
+      },
+      {
+        "img_url": "https://img.freepik.com/free-vector/hand-drawn-pet-elements-your-cute-dog_23-2147537188.jpg?w=740&t=st=1684847591~exp=1684848191~hmac=b06339aa25340a3b757d7c85b5ea5fbb42d3e687289cae58883a92644d02a992",
+        "seller_name": "PawsomeCompanions",
+        "seller_email": "sales@pawsomecompanions.com",
+        "toy_name": "Plush Puppy Pillow",
+        "price": "$19.99",
+        "rating": 4.7,
+        "available_quantity": 12,
+        "sub_category": "Dogs",
+        "details_description": "Snuggle up with our Plush Puppy Pillow! This ultra-soft and cuddly pillow features a cute and realistic design of a puppy. It's perfect for naptime, bedtime, or simply lounging around. With its huggable size and fluffy texture, this plush puppy pillow is sure to become your child's new favorite companion!"
+      }
+      
+    
+        
+]

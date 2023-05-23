@@ -5,6 +5,7 @@ import Signup from "../Pages/Signup/Signup";
 import Error from '../Pages/Error/Error'
 import Home from "../Pages/Home/Home/Home";
 import Blogs from "../Pages/Blogs/Blogs";
+import AllToy from '../Pages/AllToy/AllToy';
 
 const router = createBrowserRouter([
     {
@@ -21,9 +22,16 @@ const router = createBrowserRouter([
                 element:<Blogs></Blogs>
             },
             {
-                path:'alltoys',
-                
+                path:'alltoy',
+                element:<AllToy></AllToy>,
+                loader:()=>fetch(``)
             },
+            {
+                path:'/alltoy/:id',
+                element:<h1>Hello</h1> ,
+                loader:({params})=> fetch(``)
+            },
+
             {
                 path:'mytoy',
             },
@@ -34,6 +42,9 @@ const router = createBrowserRouter([
             {
                 path:'/signup',
                 element:<Signup></Signup>
+            },
+            {
+                path:'/addtoy',
             }
         ]
     }

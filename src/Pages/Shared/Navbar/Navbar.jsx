@@ -21,7 +21,11 @@ const Navbar = () => {
                         <li><Link to='/blogs'>Blogs</Link></li>
                         {
                             user?
-                            <li><Link to='/mytoy'>MyToy</Link></li>:
+                            <>
+                                <li><Link to='/mytoy'>MyToy</Link></li>
+                                <li><Link to='/addtoy'>AddToy</Link></li>
+                            </>
+                            :
                             ''
                         }
                         
@@ -37,7 +41,10 @@ const Navbar = () => {
                     <li><Link to='/blogs'>Blogs</Link></li>
                     {
                         user ?
-                            <li><Link to='/mytoy'>MyToy</Link></li> :
+                            <>
+                                <li><Link to='/mytoy'>MyToy</Link></li>
+                                <li><Link to='/addtoy'>AddToy</Link></li>
+                            </>:
                             ''
                     }
                 </ul>
