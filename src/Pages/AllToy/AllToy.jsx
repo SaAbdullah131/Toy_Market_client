@@ -1,25 +1,32 @@
-import Rect, { useContext, useState } from 'react';
+import Rect, { useState } from 'react';
 import SingleToy from './SingleToy';
 import { useLoaderData } from 'react-router-dom';
-import { AuthContext } from '../../Providers/AuthProvider';
 
 const AllToy = () => {
     const loader = useLoaderData();
-    const[alltoy,setAlltoy] = useState(loader);
-    const [hide,setHide] = useState(false);
+    const [alltoy, setAlltoy] = useState(loader);
+    const [hide, setHide] = useState(false);
 
-    const handleShowButton =() => {
+    const handleShowButton = () => {
         fetch(`https://toy-market-place-server-blue.vercel.app/alltoy/?limit=0`)
-        .then(res=>res.json())
-        .then(data=>{
-            setAlltoy([]);
-            setAlltoy(data);
-            setHide(true);
-        })
+            .then(res => res.json())
+            .then(data => {
+                setAlltoy([]);
+                setAlltoy(data);
+                setHide(true);
+            })
     }
     return (
-            <>
-            
+        <>
+            <div className="form-control">
+                <label className="label">
+                    <span className="label-text">Search</span>
+                </label>
+                <label className="input-group">
+                    <input type="text" placeholder="Search Here"name="search" className="input input-bordered" />
+                    <span className="btn btn-primary">Search</span>
+                </label>
+            </div>
             <table className="table w-full py-2 mt-2 mb-2">
                 {/* head */}
                 <thead>
@@ -35,17 +42,17 @@ const AllToy = () => {
                 </thead>
                 <tbody>
                     <SingleToy alltoy={alltoy}></SingleToy>
-                 </tbody>
-                 </table>  
-                 <div>
-                    {
-                        hide ? 
-                        <></>:
+                </tbody>
+            </table>
+            <div>
+                {
+                    hide ?
+                        <></> :
                         <button className="btn btn-primary" onClick={handleShowButton}>Show All</button>
-                    }
-                </div> 
-                </>
-                )
+                }
+            </div>
+        </>
+    )
 }
 
 export default AllToy;
