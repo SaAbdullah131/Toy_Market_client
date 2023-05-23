@@ -1,11 +1,12 @@
-import Rect, { useState } from 'react';
+import Rect, { useContext, useState } from 'react';
 import SingleToy from './SingleToy';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const AllToy = () => {
     const loader = useLoaderData();
     const[alltoy,setAlltoy] = useState(loader);
-
+    const{user} = useContext(AuthContext);
     return (
             <>
             <table className="table w-full py-2 mt-2 mb-2">

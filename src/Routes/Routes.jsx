@@ -6,6 +6,7 @@ import Error from '../Pages/Error/Error'
 import Home from "../Pages/Home/Home/Home";
 import Blogs from "../Pages/Blogs/Blogs";
 import AllToy from '../Pages/AllToy/AllToy';
+import SingleToy from "../Pages/AllToy/SingleToy";
 
 const router = createBrowserRouter([
     {
@@ -24,12 +25,12 @@ const router = createBrowserRouter([
             {
                 path:'alltoy',
                 element:<AllToy></AllToy>,
-                loader:()=>fetch(``)
+                loader:()=>fetch(`https://toy-market-place-server-blue.vercel.app/alltoy`)
             },
             {
-                path:'/alltoy/:id',
-                element:<h1>Hello</h1> ,
-                loader:({params})=> fetch(``)
+                path:'/alltoy/just/:id',
+                element:<h1>hello</h1> ,
+                loader:({params})=> fetch(`https://toy-market-place-server-blue.vercel.app/alltoy/just/${params.id}`)
             },
 
             {
