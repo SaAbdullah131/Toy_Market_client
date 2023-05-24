@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import useTitle from '../../Title/useTitle';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 const AddToy = () => {
    useTitle('Add Toy');
     const {user} =useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleAddNewToy = e => {
         e.preventDefault();
@@ -28,6 +30,8 @@ const AddToy = () => {
             },
             body: JSON.stringify(newToyAdded)
         })
+        navigate('/mytoy');
+        
        Swal.fire(
             'New Toy Added Successfully'
     )

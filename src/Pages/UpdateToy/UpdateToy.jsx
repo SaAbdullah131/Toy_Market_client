@@ -2,8 +2,13 @@ import React, { useContext } from 'react';
 import useTitle from '../../Title/useTitle';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 
 const UpdateToy = () => {
+    const toyLoaded = useLoaderData();
+    const { _id,toy_name, img_url, seller_name, seller_email, sub_category, price,rating,available_quantity,details_description} = toyLoaded;
+    const navigate = useNavigate();
+
    useTitle('Update Toy');
     const {user} = useContext(AuthContext);
 
@@ -20,15 +25,17 @@ const UpdateToy = () => {
         const available_quantity = form.quantity.value;
         const details_description = form.detail_description.value;
 
-        const updated = { toy_name, img_url, seller_name, seller_email, sub_category, price,rating,available_quantity,details_description}
+        const updated = {toy_name, img_url, seller_name, seller_email, sub_category, price,rating,available_quantity,details_description}
+
         console.log(toy_name);
         fetch(`https://toy-market-place-server-blue.vercel.app/update/${_id}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newToyAdded)
+            body: JSON.stringify(updated)
         })
+        navigate('/mytoy');
        Swal.fire(
             'Updated Successfully'
     )
@@ -47,7 +54,7 @@ const UpdateToy = () => {
                                         <label className="label">
                                             <span className="label-text">Toy Name</span>
                                         </label>
-                                        <input name='toy_name' type="text" placeholder="name" defaultValue = {toy_name} className="input input-bordered"/>
+                                        <input name='toy_name' type="text" placeholder="name" defaultValue={toy_name} className="input input-bordered"/>
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
@@ -65,7 +72,7 @@ const UpdateToy = () => {
                                         <label className="label">
                                             <span className="label-text">Photo Url</span>
                                         </label>
-                                        <input name='img_url' type="text" placeholder="photo url" className="input input-bordered" />
+                                        <input name='img_url' type="text" defaultValue={user?.img_url} placeholder="photo url" className="input input-bordered" />
                                     </div>
                                 </div>
                                 <div>
@@ -73,25 +80,25 @@ const UpdateToy = () => {
                                         <label className="label">
                                             <span className="label-text">Sub Category</span>
                                         </label>
-                                        <input name='sub_category' type="text" placeholder="Sub Category" className="input input-bordered" />
+                                        <input name='sub_category' type="text" defaultValue={sub_category} placeholder="Sub Category" className="input input-bordered" />
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">Price</span>
                                         </label>
-                                        <input name='price' type="number" placeholder="price" className="input input-bordered" />
+                                        <input name='price' type="number" defaultValue={price} placeholder="price" className="input input-bordered" />
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">Rating</span>
                                         </label>
-                                        <input name='rating' type="number" placeholder="rating" className="input input-bordered" />
+                                        <input name='rating' type="number" defaultValue={rating} placeholder="rating" className="input input-bordered" />
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">Quantity</span>
                                         </label>
-                                        <input name='quantity' type="number" placeholder="quantity" className="input input-bordered" />
+                                        <input name='quantity' type="number" defaultValue={available_quantity} placeholder="quantity" className="input input-bordered" />
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +106,7 @@ const UpdateToy = () => {
                                 <label className="label">
                                     <span className="label-text">Detail description</span>
                                 </label>
-                                <textarea name='detail_description' placeholder="description" className="input input-bordered" />
+                                <textarea name='detail_description' defaultValue={details_description} placeholder="description" className="input input-bordered" />
                             </div>
                             <div className="form-control mt-6">
                                 <input type="submit" className=" btn btn-primary mx-auto" value="Update" />
