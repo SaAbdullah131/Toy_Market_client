@@ -41,10 +41,12 @@ const AuthProvider = ({children}) => {
 
     // log out
     const logOut = ()=> {
+            setLoading(false);
             return signOut(auth);
     }
     // update user info
     const updateUserInfo = (name,photo) => {
+        setLoading(false);
         return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photo
