@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className="carousel w-full h-[600px] mt-3 mb-4">
+        <div className="carousel w-full h-[600px] mt-3 mb-8">
             <div id="banner1" className="carousel-item relative w-full">
                 <img src={banner1} className="w-full rounded-lg" />
                 <div className="absolute rounded-lg flex justify-end transform  left-10 right-5 bottom-0">
