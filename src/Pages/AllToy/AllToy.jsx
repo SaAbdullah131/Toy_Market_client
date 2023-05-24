@@ -2,14 +2,15 @@ import Rect, { useContext, useState } from 'react';
 import SingleToy from './SingleToy';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import useTitle from '../../Title/useTitle';
 
 const AllToy = () => {
     const loader = useLoaderData();
     const [alltoy, setAlltoy] = useState(loader);
     const [hide, setHide] = useState(false);
     const {user} = useContext(AuthContext);
-    useTitle('Update Toy');
-    
+    useTitle("All Toy");
+
      const search = (e) => {
         e.preventDefault();
         const search = e.target.search.value;
