@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
 import SignupImage from '../../assets/sign up.gif'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
 
 const Signup = () => {
     const {createUser} = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleSignUp = e=> {
         e.preventDefault();
@@ -13,12 +14,15 @@ const Signup = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(name, email, password);
+        // console.log(name, email, password);
 
         createUser(email,password)
         .then(result=> {
             const newUser = result.user;
             console.log(newUser);
+            Swal.fire('Successfully Created a Account');
+            navigate('/');
+            form.reset();
             
         })
         .catch(error=> {
@@ -28,6 +32,7 @@ const Signup = () => {
                 title: 'Oops...',
                 text: 'Something went wrong! Try Again',
               })
+              form.reset();
         })
     }
     return (
