@@ -8,7 +8,8 @@ const AllToy = () => {
     const [alltoy, setAlltoy] = useState(loader);
     const [hide, setHide] = useState(false);
     const {user} = useContext(AuthContext);
-
+    useTitle('Update Toy');
+    
      const search = (e) => {
         e.preventDefault();
         const search = e.target.search.value;
