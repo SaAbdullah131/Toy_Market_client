@@ -7,6 +7,18 @@ const AllToy = () => {
     const [alltoy, setAlltoy] = useState(loader);
     const [hide, setHide] = useState(false);
 
+     const search = (e) => {
+        e.preventDefault();
+        const search = e.target.search.value;
+        console.log(search);
+        fetch(`https://toy-market-place-server-blue.vercel.app/alltoy?search=${search}`)
+       .then(res => res.json())
+       .then(data => {
+        setAlltoy([]);
+        setAlltoy(data);
+        setHide(true);
+    })
+    }
     const handleShowButton = () => {
         fetch(`https://toy-market-place-server-blue.vercel.app/alltoy/?limit=0`)
             .then(res => res.json())
@@ -18,15 +30,12 @@ const AllToy = () => {
     }
     return (
         <>
-            <div className="form-control">
-                <label className="label">
-                    <span className="label-text">Search</span>
+            <form onSubmit={search}className="form-control p-5">
+                <label className="input-group flex justify-center">
+                    <input  type="text" placeholder="Search Here" name="search" className="input input-bordered" />
+                    <input className='btn btn-primary' type="submit" value="Search" />
                 </label>
-                <label className="input-group">
-                    <input type="text" placeholder="Search Here"name="search" className="input input-bordered" />
-                    <span className="btn btn-primary">Search</span>
-                </label>
-            </div>
+            </form>
             <table className="table w-full py-2 mt-2 mb-2">
                 {/* head */}
                 <thead>

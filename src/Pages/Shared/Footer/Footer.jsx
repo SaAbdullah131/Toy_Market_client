@@ -3,7 +3,7 @@ import logo from '../../../assets/toddlershopLogo.png';
 const Footer = () => {
     return (
         <div className=" bg-indigo-100">
-        <footer className="footer p-10 text-base-content items-center" data-aos="fade-right">
+        <footer className="footer p-10 text-base-content items-center">
             <div className='flex flex-col'>
                 <img src={logo} className="rounded-full w-3/4"/>
                 <p className='text-lg font-semibold'>Mirpur shopping Complex <br />Mirpur,Dhaka-1216</p>
