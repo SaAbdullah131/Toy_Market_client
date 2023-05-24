@@ -3,12 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import MySingleToy from './MySingleToy/MySingleToy';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Providers/AuthProvider';
+import useTitle from '../../Title/useTitle';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [alltoy, setAllToy] = useState([]);
     const navigate = useNavigate();
-
+    useTitle('All Toy');
 
     useEffect(() => {
         fetch(`https://toy-market-place-server-blue.vercel.app/mytoy?userEmail=${user?.email}`)

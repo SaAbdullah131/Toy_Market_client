@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
 import { Link } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut,loading } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
             .then()
@@ -50,10 +52,40 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <div className="w-10 rounded-full mr-5">
-                    <img className="w-10 rounded-full" src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg" />
-                </div>
-                <div>
+                <div className='flex items-center gap-2'>
+                {
+                            user && <>
+                                <div className="dropdown dropdown-end">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            {
+                                                !loading && <>
+                                                    <img className={user.displayName ? 'user-img-tooltip' : ''} src={user.photoURL ? user?.photoURL : 'https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg'} />
+                                                    <Tooltip
+                                                    style={{
+                                                            backgroundColor: "#1B9C85",
+                                                    }}
+                                                        anchorSelect='.user-img-tooltip'
+                                                        content={user?.displayName}
+                                                        place='left'
+                                                    ></Tooltip>
+                                                </>
+                                            }
+                                        </div>
+                                    </label>
+                                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-4 p-2 bg-back text-tex rounded-box w-52">
+                                        <li>
+                                            <a className="justify-between">
+                                                Profile
+                                                <span className="badge">New</span>
+                                            </a>
+                                        </li>
+                                        <li><a>Settings</a></li>
+                                       
+                                    </ul>
+                                </div>
+                            </>
+                        }
                     {
                         user ?
                             <button onClick={handleLogOut} className='btn btn-primary mb-2'><Link to='/'>Logout</Link></button> :

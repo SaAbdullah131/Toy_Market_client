@@ -8,7 +8,7 @@ console.log(user);
     const handleViewDetails=()=> {
         if(!user) {
             Swal.fire("Bro You have to Login first");
-        }
+        } 
     }
     return (
         <>

@@ -5,7 +5,7 @@
 
 * User Registration and authentication.Where User can created account and login with some credential information. Also login by using google account.
 
-* User Can Show All toy without login the platform but details of a specifi toy user must login
+* User Can Show All toy without login the platform but details of a specific toy user must login
 
 * Category wise Product Showing .. When just click Category, that category toys come up.
 

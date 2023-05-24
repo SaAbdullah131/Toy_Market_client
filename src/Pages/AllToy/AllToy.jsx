@@ -1,11 +1,13 @@
-import Rect, { useState } from 'react';
+import Rect, { useContext, useState } from 'react';
 import SingleToy from './SingleToy';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const AllToy = () => {
     const loader = useLoaderData();
     const [alltoy, setAlltoy] = useState(loader);
     const [hide, setHide] = useState(false);
+    const {user} = useContext(AuthContext);
 
      const search = (e) => {
         e.preventDefault();
@@ -50,7 +52,7 @@ const AllToy = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <SingleToy alltoy={alltoy}></SingleToy>
+                    <SingleToy alltoy={alltoy} user={user}></SingleToy>
                 </tbody>
             </table>
             <div>
