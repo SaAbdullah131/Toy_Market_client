@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import FeaturedToy from '../FeaturedToy/FeaturedToy';
 import Category from '../../../Category/Category';
 import TopFeature from '../../TopFeature/TopFeature';
+import CoutdownSec from '../../CoutdownSec/CoutdownSec';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <TopFeature></TopFeature>
             <FeaturedToy></FeaturedToy>
             <Category></Category>
+            <CoutdownSec></CoutdownSec>
         </div>
     );
 };
