@@ -5,21 +5,23 @@ import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
 
 const Signup = () => {
-    const {createUser} = useContext(AuthContext);
+    const {createUser,updateUserInfo} = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleSignUp = e=> {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
+        const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        // console.log(name, email, password);
+        console.log(name,photo, email, password);
 
         createUser(email,password)
         .then(result=> {
             const newUser = result.user;
-            console.log(newUser);
+            updateUserInfo(name,photo);
+             console.log(newUser);
             Swal.fire('Successfully Created a Account');
             navigate('/');
             form.reset();
@@ -40,7 +42,7 @@ const Signup = () => {
             <div className="hero-content flex-col lg:flex-row">
 
                 <div className="text-center lg:text-left">
-                    <img src={SignupImage} alt=""/>
+                    <img src={SignupImage}/>
                 </div>
                 <div className="card w-full max-w-sm max-h-lg shadow-2xl bg-base-100">
                     <form onSubmit={handleSignUp} className="card-body">
